@@ -1,0 +1,32 @@
+$dark_gray: #272727;
+
+.btn {
+  color: $dark_gray;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 4px;
+  height: 35px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  width: 109px;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+
+  &.btn--dark-bg {
+    background-color: $dark_gray;
+    color: #ffffff;
+    border: 0;
+	}
+
+	&.btn--auto-width {
+		width: auto;
+		padding: 0 15px;
+	}
+}

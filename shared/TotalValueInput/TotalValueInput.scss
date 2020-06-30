@@ -1,0 +1,28 @@
+.input-pound {
+  &.input-pound--filled {
+    position: relative;
+
+    input {
+      padding-left: 12px;
+    }
+
+    i {
+      position: absolute;
+      top: 27px;
+      left: 0;
+
+      &:before {
+        content: '\A3';
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+	}
+
+	&.input--per-month:after {
+    content: 'per month';
+		font-size: 10px;
+		text-transform: initial;
+	}
+}
